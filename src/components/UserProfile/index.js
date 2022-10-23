@@ -70,7 +70,7 @@ class UserProfile extends Component {
       // isLoading: false,
       profileFetchStatus: userProfileStatusConstants.userProfileSuccess,
     })
-    // console.log(stories)
+    console.log(formattedData.stories)
   }
 
   onClickUserProfileRetry = () => this.getUserProfile()
@@ -209,8 +209,6 @@ class UserProfile extends Component {
   }
 
   render() {
-    // const {isLoading} = this.state
-
     return (
       <div className="user-profile-container">
         <Header />
